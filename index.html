@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margret</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+    <!-- Loading Screen -->
+    <div class="page-loading" id="loadingScreen">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <h2 style="margin: 0; font-size: 1.5rem;">🏥 HealthCare Clinic</h2>
+            <ul id="nav-menu">
+                <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+                <li><a href="#" data-page="products" class="nav-link">Products</a></li>
+                <li><a href="#" data-page="about" class="nav-link">About</a></li>
+                <li><a href="#" data-page="contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <div class="home page-content">
+            <div class="container">
+                <h1>Welcome to HealthCare Clinic</h1>
+                <p class="subtitle">Your Trusted Partner in Health and Wellness</p>
+                <p class="location">📍 Gayaza Town, Near Centenary Bank , MC 12345</p>
+                <div class="hours">
+                    🕒 Monday - Friday: 9:00 AM - 6:00 PM | Saturday: 10:00 AM - 4:00 PM | Sunday: Closed
+                </div>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>👨‍⚕️ Expert Medical Care</h3>
+                        <p>Board-certified physicians and specialists providing comprehensive medical services with the latest technology.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🏥 Modern Facilities</h3>
+                        <p>State-of-the-art equipment and comfortable environments designed for accurate diagnosis and patient comfort.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>❤️ Patient-Centered Approach</h3>
+                        <p>Personalized care plans tailored to your unique health needs with compassionate, attentive service.</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 3rem; padding: 2rem; background: rgba(255,255,255,0.2); border-radius: 15px;">
+                    <h3 style="color: white; margin-bottom: 1rem;">Why Choose Us?</h3>
+                    <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem;">
+                        With over 20 years of service in Medical City, HealthCare Clinic is committed to your well-being. 
+                        Our experienced team provides preventive care, timely treatments, and ongoing support for all your healthcare needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Page -->
+    <div id="products" class="page">
+        <div class="products page-content">
+            <div class="container">
+                <h2 class="section-title">Our Medical Products</h2>
+                <p class="section-subtitle">
+                    Discover our comprehensive range of high-quality medical products and healthcare essentials available through our trusted partners.
+                </p>
+                
+                <!-- Photo Slider -->
+                <div class="slider-container">
+                    <div class="slider" id="productSlider">
+                        <div class="slide" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTAwIiBoZWlnaHQ9IjQ1MCIgdmlld0JveD0iMCAwIDkwMCA0NTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmZGRkZiIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjIyNSIgcj0iMTAwIiBmaWxsPSIjMDA3YmZmIiBzdHJva2U9IiMwMDViYjMiIHN0cm9rZS13aWR0aD0iNCIvPjxjaXJjbGUgY3g9IjM1MCIgY3k9IjE4MCIgcj0iNjAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzAwN2JmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+PHN2ZyB4PSIzNDAiIHk9IjE3MCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiB2aWV3Qm94PSIwIDAgODAgODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMTAiIHk9IjIwIiB3aWR0aD0iNjAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwN2JmZiIgc3Ryb2tlLXdpZHRoPSIyIiByeD0iMTAiLz48dGV4dCB4PSI0MCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzAwN2JmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Vml0YW1pbiBDPC90ZXh0Pjwvc3ZnPjxjaXJjbGUgY3g9IjU1MCIgY3k9IjI4MCIgcj0iNDAiIGZpbGw9IiMwMDdiZmYiLz48L3N2Zz4=');">
+                            <div class="slide-content">
+                                <h3>Vitamin Supplements</h3>
+                                <p>Essential vitamins and minerals to boost your immune system, support overall health, and maintain optimal wellness throughout the year.</p>
+                            </div>
+                        </div>
+                        <div class="slide" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTAwIiBoZWlnaHQ9IjQ1MCIgdmlld0JveD0iMCAwIDkwMCA0NTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmYjllZiIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjIyNSIgcj0iOTUiIGZpbGw9IiNmZmIyOTkiIHN0cm9rZT0iI2RkNmE0ZiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHN2ZyB4PSI0NDAiIHk9IjIxMCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiB2aWV3Qm94PSIwIDAgODAgODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMTUiIHk9IjE1IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2RkNmE0ZiIgc3Ryb2tlLXdpZHRoPSIyIiByeD0iMTAiLz48dGV4dCB4PSI0MCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMSIgZmlsbD0iI2RkNmE0ZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SWJ1cHJvZmVuCjwvdGV4dD48L3N2Zz48Y2lyY2xlIGN4PSI1MDAiIGN5PSIzMDAiIHI9IjMwIiBmaWxsPSIjZmZiMjk5Ii8+PHN2ZyB4PSIzMDAiIHk9IjE1MCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgNjAgNjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMTAiIHk9IjE1IiB3aWR0aD0iNDAiIGhlaWdodD0iMzAiIGZpbGw9IiNmZmIyOTkiIHN0cm9rZT0iI2RkNmE0ZiIgc3Ryb2tlLXdpZHRoPSIxIiByeD0iNSIvPjwvc3ZnPjwvc3ZnPg==');">
+                            <div class="slide-content">
+                                <h3>Pain Relief Medication</h3>
+                                <p>Fast-acting solutions for headaches, muscle pain, joint discomfort, and inflammation to help you get back to your daily activities comfortably.</p>
+                            </div>
+                        </div>
+                        <div class="slide" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTAwIiBoZWlnaHQ9IjQ1MCIgdmlld0JveD0iMCAwIDkwMCA0NTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2Y5ZmZmZiIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjIyNSIgcj0iMTAwIiBmaWxsPSIjMDBmZjAwIiBzdHJva2U9IiMwMGM4M2UiIHN0cm9rZS13aWR0aD0iNCIvPjxjaXJjbGUgY3g9IjM1MCIgY3k9IjE4MCIgcj0iNjUiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzAwZmYwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHN2ZyB4PSIzNDAiIHk9IjE2NSIgd2lkdGg9IjcwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgNzAgNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iNSIgeT0iMTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzAwZmYwMCIgc3Ryb2tlPSIjMDBjODNlIiBzdHJva2Utd2lkdGg9IjIiIHJ4PSIxMiIvPjx0ZXh0IHg9IjM1IiB5PSI0NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QW1waWxsaWNpYTwvdGV4dD48L3N2Zz48Y2lyY2xlIGN4PSI1NTAiIGN5PSIyOTUiIHI9IjM1IiBmaWxsPSIjMDBmZjAwIi8+PC9zdmc+');">
+                            <div class="slide-content">
+                                <h3>Antibiotics & Infections</h3>
+                                <p>Prescription-strength antibiotics to effectively fight bacterial infections and promote faster recovery under medical supervision.</p>
+                            </div>
+                        </div>
+                        <div class="slide" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTAwIiBoZWlnaHQ9IjQ1MCIgdmlld0JveD0iMCAwIDkwMCA0NTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmZWZlZiIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjIyNSIgcj0iOTUiIGZpbGw9IiNmZmU1Y2MiIHN0cm9rZT0iI2RkN2I5ZCIgc3Ryb2tlLXdpZHRoPSIzIi8+PHN2ZyB4PSI0NDAiIHk9IjIxMCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiB2aWV3Qm94PSIwIDAgODAgODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMTUiIHk9IjE1IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiNmZmUiIHN0cm9rZT0iI2RkN2I5ZCIgc3Ryb2tlLXdpZHRoPSIyIiByeD0iMTAiLz48dGV4dCB4PSI0MCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMSIgZmlsbD0iI2RkN2I5ZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+T21lcHJhem9sZTwvdGV4dD48L3N2Zz48Y2lyY2xlIGN4PSIzMDAiIGN5PSIzMDAiIHI9IjQwIiBmaWxsPSIjZmZlNWNjIi8+PHN2ZyB4PSI1MDAiIHk9IjE1MCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgNjAgNjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMTAiIHk9IjE1IiB3aWR0aD0iNDAiIGhlaWdodD0iMzAiIGZpbGw9IiNmZmU1Y2MiIHN0cm9rZT0iI2RkN2I5ZCIgc3Ryb2tlLXdpZHRoPSIxIiByeD0iNSIvPjwvc3ZnPjwvc3ZnPg==');">
+                            <div class="slide-content">
+                                <h3>Digestion & Stomach Care</h3>
+                                <p>Specialized medications for heartburn, acid reflux, indigestion, and gastrointestinal discomfort to restore digestive balance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-nav prev" onclick="changeSlide(-1)">❮</button>
+                    <button class="slider-nav next" onclick="changeSlide(1)">❯</button>
+                    <div class="slider-dots">
+                        <span class="dot active" onclick="currentSlide(0)"></span>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+
+                <!-- Detailed Products Grid -->
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDMwMCAyNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmZGRkZiIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyNSIgcj0iODAiIGZpbGw9IiMwMGJiZmYiIHN0cm9rZT0iIzAwNGRiZiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHN2ZyB4PSIxNDAiIHk9IjEwNSIgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiB2aWV3Qm94PSIwIDAgODAgODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMTUiIHk9IjIwIiB3aWR0aD0iNTAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwYmJmZiIgc3Ryb2tlLXdpZHRoPSIyIiByeD0iMTAiLz48dGV4dCB4PSI0MCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzAwNGRiZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Vml0YW1pbiBDCjwvdGV4dD48L3N2Zz48Y2lyY2xlIGN4PSIxOTAiIGN5PSIxNjUiIHI9IjI1IiBmaWxsPSIjMDBiYmZmIi8+PC9zdmc+" class="product-image" alt="Vitamin C Complex">
+                        <h3 class="product-title">Vitamin C Complex</h3>
+                        <p class="product-description">High-potency Vitamin C with bioflavonoids, rose hips, and acerola cherry for maximum immune support and antioxidant protection.</p>
+                        <div class="product-details">500mg per tablet | 120 tablets per bottle</div>
+                        <div class="product-price">$24.99</div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDMwMCAyNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmYjllZiIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyNSIgcj0iNzUiIGZpbGw9IiNmZmIyOTkiIHN0cm9rZT0iI2RkNmE0ZiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHN2ZyB4PSIxNDAiIHk9IjEwMCIgd2lkdGg9IjkcIiBoZWlnaHQ9IjkwIiB2aWV3Qm94PSIwIDAgOTAgOTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMTUiIHk9IjIwIiB3aWR0aD0iNjAiIGhlaWdodD0iNTAiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmYjI5OSIgc3Ryb2tlLXdpZHRoPSIyIiByeD0iMTIiLz48dGV4dCB4PSI0NSIgeT0iNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iI2RkNmE0ZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SWJ1cHJvZmVuCjwvdGV4dD48L3N2Zz48Y2lyY2xlIGN4PSIxODAiIGN5PSIxNjAiIHI9IjIwIiBmaWxsPSIjZmZiMjk5Ii8+PC9zdmc+" class="product-image" alt="Ibuprofen">
+                        <h3 class="product-title">Ibuprofen 400mg</h3>
+                        <p class="product-description">Fast-acting, non-steroidal anti-inflammatory for pain relief, fever reduction, and inflammation control. Gentle on the stomach.</p>
+                        <div class="product-details">400mg tablets | 100 count bottle | Take with food</div>
+                        <div class="product-price">$18.99</div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDMwMCAyNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2Y5ZmZmZiIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyNSIgcj0iODAiIGZpbGw9IiMwMGZmMDAiIHN0cm9rZT0iIzAwY2I1ZiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHN2ZyB4PSIxNDAiIHk9IjEwNSIgd2lkdGg9IjcwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgNzAgNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMTAiIHk9IjE1IiB3aWR0aD0iNTAiIGhlaWdodD0iNDAiIGZpbGw9IiMwMGZmMDAiIHN0cm9rZT0iIzAwY2I1ZiIgc3Ryb2tlLXdpZHRoPSIyIiByeD0iMTAiLz48dGV4dCB4PSIzNSIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMSIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkFtcGlsbGljaW48L3RleHQ+PC9zdmc+PGNpcmNsZSBjeD0iMTkwIiBjeT0iMTYwIiByPSIxNSIgZmlsbD0iIzAwZmYwMCIvPjwvc3ZnPg==" class="product-image" alt="Amoxicillin">
+                        <h3 class="product-title">Amoxicillin 500mg</h3>
+                        <p class="product-description">Broad-spectrum penicillin antibiotic for treating various bacterial infections. Effective against respiratory and skin infections.</p>
+                        <div class="product-details">500mg capsules | 21 count | Prescription required</div>
+                        <div class="product-price">$29.99</div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDMwMCAyNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmZWZlZiIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyNSIgcj0iNzUiIGZpbGw9IiNmZmU1Y2MiIHN0cm9rZT0iI2RkN2I5ZCIgc3Ryb2tlLXdpZHRoPSIzIi8+PHN2ZyB4PSIxNDAiIHk9IjEwMCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiB2aWV3Qm94PSIwIDAgODAgODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMTUiIHk9IjIwIiB3aWR0aD0iNTAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmUiIHN0cm9rZT0iI2ZmZTVjYyIgc3Ryb2tlLXdpZHRoPSIyIiByeD0iMTAiLz48dGV4dCB4PSI0MCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMSIgZmlsbD0iI2RkN2I5ZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+T21lcHJhem9sZTwvdGV4dD48L3N2Zz48Y2lyY2xlIGN4PSIxOTAiIGN5PSIxNjUiIHI9IjIwIiBmaWxsPSIjZmZlNWNjIi8+PC9zdmc+" class="product-image" alt="Omeprazole">
+                        <h3 class="product-title">Omeprazole 20mg</h3>
+                        <p class="product-description">Proton pump inhibitor for long-lasting relief from heartburn, acid reflux, and GERD symptoms. Delayed-release capsules.</p>
+                        <div class="product-details">20mg capsules | 30 count | Take before meals</div>
+                        <div class="product-price">$22.99</div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDMwMCAyNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmY2NmZiIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyNSIgcj0iODAiIGZpbGw9IiMwMDdiZmYiIHN0cm9rZT0iIzAwNTZiMyIgc3Ryb2tlLXdpZHRoPSIzIi8+PHN2ZyB4PSIxNDAiIHk9IjEwNSIgd2lkdGg9IjcwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgNzAgNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMTUiIHk9IjIwIiB3aWR0aD0iNDAiIGhlaWdodD0iMzAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzAwN2JmZiIgc3Ryb2tlLXdpZHRoPSIyIiByeD0iOCIvPjx0ZXh0IHg9IjM1IiB5PSI0NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSIjMDA1NmIzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5DYWxjaXVtPC90ZXh0Pjwvc3ZnPjxjaXJjbGUgY3g9IjE5MCIgY3k9IjE2NSIgcj0iMjUiIGZpbGw9IiMwMDdiZmYiLz48L3N2Zz4=" class="product-image" alt="Calcium D">
+                        <h3 class="product-title">Calcium + Vitamin D</h3>
+                        <p class="product-description">Complete bone health formula with 600mg calcium citrate and 400 IU Vitamin D3 for optimal absorption and bone strength.</p>
+                        <div class="product-details">600mg + 400IU | 120 tablets | Take with meals</div>
+                        <div class="product-price">$26.99</div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDMwMCAyNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2Y4ZmZmZiIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyNSIgcj0iNzUiIGZpbGw9IiMwMDdmZmYiIHN0cm9rZT0iIzAwNTZiMyIgc3Ryb2tlLXdpZHRoPSIzIi8+PHN2ZyB4PSIxNDAiIHk9IjEwMCIgd2lkdGg9IjkcIiBoZWlnaHQ9IjkwIiB2aWV3Qm94PSIwIDAgOTAgOTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMTUiIHk9IjI1IiB3aWR0aD0iNjAiIGhlaWdodD0iNDAiIGZpbGw9IiMwMDdmZmYiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgcng9IjEwIi8+PHRleHQgeD0iNDUiIHk9IjUyIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BbGxlcmd5PC90ZXh0Pjwvc3ZnPjxjaXJjbGUgY3g9IjE5MCIgY3k9IjE2MCIgcj0iMjAiIGZpbGw9IiMwMDdmZmYiLz48L3N2Zz4=" class="product-image" alt="Allergy Relief">
+                        <h3 class="product-title">Allergy Relief 24HR</h3>
+                        <p class="product-description">Extended-release antihistamine for seasonal and environmental allergies. Non-drowsy formula provides all-day symptom relief.</p>
+                        <div class="product-details">10mg tablets | 90 count | Once daily dosing</div>
+                        <div class="product-price">$21.99</div>
+                    </div>
+                </div>
+
+                <!-- Shopping Locations -->
+                <div class="locations-section">
+                    <h3 class="locations-title">Where to Purchase</h3>
+                    <p class="section-subtitle">
+                        Visit our trusted pharmacy partners across Medical City for convenient access to all our recommended medical products and personalized service.
+                    </p>
+                    <div class="locations-grid">
+                        <div class="location-card">
+                            <div class="location-icon">🏥</div>
+                            <h4 class="location-name">Pharmacy Central</h4>
+                            <div class="location-address">
+                                456 Health Avenue<br>
+                                Medical City, MC 12345
+                            </div>
+                            <div class="location-hours">🕐 Open 24/7</div>
+                            <p style="color: #666; margin-top: 1rem;">Phone: (555) 987-6543<br>Free delivery available</p>
+                        </div>
+                        <div class="location-card">
+                            <div class="location-icon">🛒</div>
+                            <h4 class="location-name">Health Store Plus</h4>
+                            <div class="location-address">
+                                789 Wellness Boulevard<br>
+                                Medical City, MC 12345
+                            </div>
+                            <div class="location-hours">🕐 Mon-Sat: 8AM-8PM<br>Sunday: 10AM-6PM</div>
+                            <p style="color: #666; margin-top: 1rem;">Phone: (555) 123-7890<br>Drive-thru pharmacy</p>
+                        </div>
+                        <div class="location-card">
+                            <div class="location-icon">💊</div>
+                            <h4 class="location-name">MediSupplies Shop</h4>
+                            <div class="location-address">
+                                101 Care Lane<br>
+                                Medical City, MC 12345
+                            </div>
+                            <div class="location-hours">🕐 Daily: 9AM-6PM</div>
+                            <p style="color: #666; margin-top: 1rem;">Phone: (555) 456-7890<br>Specialty medications</p>
+                        </div>
+                        <div class="location-card">
+                            <div class="location-icon">🏪</div>
+                            <h4 class="location-name">Wellness Pharmacy</h4>
+                            <div class="location-address">
+                                222 Recovery Road<br>
+                                Medical City, MC 12345
+                            </div>
+                            <div class="location-hours">🕐 Mon-Fri: 7AM-9PM<br>Weekend: 9AM-7PM</div>
+                            <p style="color: #666; margin-top: 1rem;">Phone: (555) 321-4567<br>Online prescription refill</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <div class="about page-content">
+            <div class="container">
+                <div class="about-hero">
+                    <div class="about-image">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDM1MCAzNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTc1IiBjeT0iMTc1IiByPSIxNDAiIGZpbGw9ImxpbmVhci1ncmFkaWVudCwgdXJsKCNncmFkKSIvPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDdiZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDU2YjMiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48dGV4dCB4PSIxNzUiIHk9IjE4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SGVhbHRoQ2FyZTwvdGV4dD48L3N2Zz4=" alt="HealthCare Clinic Logo">
+                    </div>
+                    <div class="about-text">
+                        <h2>About HealthCare Clinic</h2>
+                        <p>For over two decades, HealthCare Clinic has been the cornerstone of healthcare in Medical City. Founded in 2003, our mission has always been to provide exceptional medical care with compassion, expertise, and innovation.</p>
+                        <p>We believe healthcare should be accessible, personalized, and focused on prevention as much as treatment. Our state-of-the-art facility combines cutting-edge medical technology with a warm, welcoming environment designed to put our patients at ease.</p>
+                    </div>
+                </div>
+
+                <div class="mission-vision">
+                    <div class="mission-card">
+                        <div class="mission-icon">🎯</div>
+                        <h3>Our Mission</h3>
+                        <p>To provide comprehensive, patient-centered healthcare that promotes wellness, prevents illness, and treats medical conditions with the highest standards of medical excellence and compassionate care.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="vision-icon">🌟</div>
+                        <h3>Our Vision</h3>
+                        <p>To be the leading healthcare provider in Medical City, recognized for our commitment to medical innovation, patient satisfaction, and community health improvement through preventive care and education.</p>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">2003</span>
+                        <strong>Founded</strong>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">50+</span>
+                        <strong>Medical Staff</strong>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">20+</span>
+                        <strong>Years Experience</strong>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">10,000+</span>
+                        <strong>Patients Served</strong>
+                    </div>
+                </div>
+
+                <div class="team-section">
+                    <h2 class="section-title" style="margin-bottom: 2rem;">Meet Our Team</h2>
+                    <p class="section-subtitle" style="margin-bottom: 3rem;">
+                        Our dedicated team of healthcare professionals brings years of experience and genuine care to every patient interaction.
+                    </p>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iNTAiIGZpbGw9IiMwMDdiZmYiLz48dGV4dCB4PSI2MCIgeT0iNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkRyLiBTbWl0aDwvdGV4dD48L3N2Zz4=" alt="Dr. Smith">
+                            <h4>Dr. John Smith</h4>
+                            <div class="role">Medical Director & Primary Care</div>
+                            <p>20+ years experience in family medicine and preventive care.</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iNTAiIGZpbGw9IiMyOGE3NDUiLz48dGV4dCB4PSI2MCIgeT0iNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkRyLiBKYWNrc29uPC90ZXh0Pjwvc3ZnPg==" alt="Dr. Jackson">
+                            <h4>Dr. Sarah Jackson</h4>
+                            <div class="role">Pediatric Specialist</div>
+                            <p>Expert in child healthcare and developmental care for all ages.</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iNTAiIGZpbGw9IiNmZmMzMDAiLz48dGV4dCB4PSI2MCIgeT0iNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1zLiBHaWxscw0vdGV4dD48L3N2Zz4=" alt="Ms. Gill">
+                            <h4>Ms. Emily Gill, PA</h4>
+                            <div class="role">Physician Assistant</div>
+                            <p>Specializes in urgent care and chronic disease management.</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iNTAiIGZpbGw9IiNkYzM1NDUiLz48dGV4dCB4PSI2MCIgeT0iNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkRyLiBHYW5kag0vdGV4dD48L3N2Zz4=" alt="Dr. Gandhi">
+                            <h4>Dr. Raj Gandhi</h4>
+                            <div class="role">Cardiology Specialist</div>
+                            <p>Heart health expert with advanced training in cardiovascular care.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; padding: 3rem 0; background: white; border-radius: 15px; margin: 3rem 0;">
+                    <h3 style="color: #007bff; margin-bottom: 1.5rem; font-size: 1.8rem;">Accreditations & Awards</h3>
+                    <p style="color: #666; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
+                        HealthCare Clinic is proud to be accredited by the National Health Board and recognized for excellence in patient care. 
+                        We've received the Medical City Excellence Award for three consecutive years and maintain a 4.9/5 patient satisfaction rating.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <div class="contact page-content">
+            <div class="container">
+                <div class="contact-hero">
+                    <h2>Get In Touch</h2>
+                    <p>We're here to help with your healthcare needs. Schedule an appointment or ask us any questions you may have.</p>
+                </div>
+
+                <div class="contact-content">
+                    <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="contactName">Full Name *</label>
+                            <input type="text" id="contactName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address *</label>
+                            <input type="email" id="contactEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactReason">Reason for Contact</label>
+                            <select id="contactReason" name="reason">
+                                <option value="">Select a reason</option>
+                                <option value="appointment">Schedule Appointment</option>
+                                <option value="prescription">Prescription Refill</option>
+                                <option value="medical-question">Medical Question</option>
+                                <option value="general-inquiry">General Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="message" required placeholder="Please describe your inquiry or appointment needs..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+
+                    <div class="contact-info">
+                        <h3 style="color: #007bff; margin-bottom: 1.5rem; text-align: center;">Contact Information</h3>
+                        
+                        <div class="contact-item" onclick="copyToClipboard('+256 774598201', this)">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>Main Office</h4>
+                                <p>+256 774598202</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" onclick="copyToClipboard('info@healthcareclinic.com', this)">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>margret234@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" onclick="copyToClipboard('123 Wellness Street, Medical City, MC 12345', this)">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Clinic Address</h4>
+                                <p>Gayaza<br>Near Centenary Bank, MC 12345</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" onclick="copyToClipboard('Mon-Fri: 9AM-6PM | Sat: 10AM-4PM', this)">
+                            <div class="contact-icon">🕒</div>
+                            <div class="contact-details">
+                                <h4>Business Hours</h4>
+                                <p>Mon-Fri: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" onclick="copyToClipboard('Emergency: (555) 999-9999', this)">
+                            <div class="contact-icon">🚨</div>
+                            <div class="contact-details">
+                                <h4>Emergency</h4>
+                                <p>(555) 999-9999<br>24/7 Medical Assistance</p>
+                            </div>
+                        </div>
+
+                        <div class="map-placeholder">
+                            🗺️ Interactive Map Coming Soon<br>
+                            Located in the heart of Medical City
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 3rem; border-radius: 15px; text-align: center; margin-top: 3rem;">
+                    <h3 style="color: #007bff; margin-bottom: 1rem;">Appointment Request</h3>
+                    <p style="color: #666; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
+                        For urgent medical needs, please call our office directly. For routine appointments, use the form above or call during business hours. 
+                        We typically respond to inquiries within 24 hours.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 HealthCare Clinic. We Treat God Heals. | Gayaza Town, Compassion, and Excellence.</p>
+                <p style="margin-top: 0.5rem; opacity: 0.6;">Licensed Medical Facility | HIPAA Compliant | Emergency Services Available</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Page Management
+        class PageManager {
+            constructor() {
+                this.currentPage = 'home';
+                this.init();
+            }
+
+            init() {
+                this.setupNavigation();
+                this.setupMobileMenu();
+                this.hideLoadingScreen();
+                this.initProductSlider();
+                this.setupFormValidation();
+            }
+
+            setupNavigation() {
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const targetPage = link.getAttribute('data-page');
+                        this.showPage(targetPage);
+                    });
+                });
+            }
+
+            setupMobileMenu() {
+                const menuToggle = document.getElementById('menu-toggle');
+                const navMenu = document.getElementById('nav-menu');
+                
+                menuToggle.addEventListener('click', () => {
+                    menuToggle.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+
+                // Close mobile menu when clicking on a link
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        menuToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            }
+
+            showPage(pageName) {
+                // Hide all pages
+                document.querySelectorAll('.page').forEach(page => {
+                    page.classList.remove('active');
+                });
+
+                // Remove active class from all nav links
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+
+                // Show target page
+                const targetPage = document.getElementById(pageName);
+                if (targetPage) {
+                    targetPage.classList.add('active');
+                }
+
+                // Add active class to clicked nav link
+                const activeLink = document.querySelector(`[data-page="${pageName}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+
+                this.currentPage = pageName;
+
+                // Scroll to top smoothly
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+
+                // Update URL without page reload
+                history.pushState({page: pageName}, '', `#${pageName}`);
+            }
+
+            hideLoadingScreen() {
+                const loadingScreen = document.getElementById('loadingScreen');
+                setTimeout(() => {
+                    loadingScreen.classList.add('hidden');
+                }, 500);
+            }
+
+            initProductSlider() {
+                // This will be handled by the separate slider function
+            }
+
+            setupFormValidation() {
+                const form = document.getElementById('contactForm');
+                if (form) {
+                    form.addEventListener('submit', (e) => {
+                        if (!this.validateForm(form)) {
+                            e.preventDefault();
+                        }
+                    });
+                }
+            }
+
+            validateForm(form) {
+                let isValid = true;
+                const requiredFields = form.querySelectorAll('[required]');
+                
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        field.style.borderColor = '#dc3545';
+                        isValid = false;
+                    } else {
+                        field.style.borderColor = '#28a745';
+                    }
+                });
+
+                const email = form.querySelector('#contactEmail');
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (email && email.value && !emailRegex.test(email.value)) {
+                    email.style.borderColor = '#dc3545';
+                    isValid = false;
+                }
+
+                return isValid;
+            }
+        }
+
+        // Product Slider
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.transform = `translateX(${(i - index) * 100}%)`;
+            });
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+
+            currentSlideIndex = index;
+        }
+
+        function changeSlide(direction) {
+            let newIndex = currentSlideIndex + direction;
+            if (newIndex >= totalSlides) newIndex = 0;
+            if (newIndex < 0) newIndex = totalSlides - 1;
+            showSlide(newIndex);
+        }
+
+        function currentSlide(index) {
+            showSlide(index);
+        }
+
+        // Auto-slide functionality
+        function autoSlide() {
+            changeSlide(1);
+        }
+
+        let slideInterval = setInterval(autoSlide, 5000);
+
+        // Pause auto-slide on hover
+        const sliderContainer = document.querySelector('.slider-container');
+        if (sliderContainer) {
+            sliderContainer.addEventListener('mouseenter', () => {
+                clearInterval(slideInterval);
+            });
+            sliderContainer.addEventListener('mouseleave', () => {
+                slideInterval = setInterval(autoSlide, 5000);
+            });
+        }
+
+        // Contact Form Handler
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const submitBtn = form.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            
+            // Validate form
+            if (!validateContactForm(form)) {
+                return false;
+            }
+
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+
+            // Simulate form submission
+            setTimeout(() => {
+                const formData = new FormData(form);
+                const name = formData.get('name');
+                const email = formData.get('email');
+                
+                // Reset form
+                form.reset();
+                
+                // Show success message
+                showSuccessMessage(name);
+                
+                // Reset button
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        }
+
+        function validateContactForm(form) {
+            let isValid = true;
+            const requiredFields = form.querySelectorAll('[required]');
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.style.borderColor = '#dc3545';
+                    isValid = false;
+                } else {
+                    field.style.borderColor = '#28a745';
+                }
+            });
+
+            const emailField = form.querySelector('#contactEmail');
+            if (emailField && emailField.value) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(emailField.value)) {
+                    emailField.style.borderColor = '#dc3545';
+                    isValid = false;
+                } else {
+                    emailField.style.borderColor = '#28a745';
+                }
+            }
+
+            return isValid;
+        }
+
+        function showSuccessMessage(name) {
+            // Create success message
+            const successDiv = document.createElement('div');
+            successDiv.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: linear-gradient(135deg, #28a745, #20c997);
+                color: white;
+                padding: 1.5rem 2rem;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(40, 167, 69, 0.3);
+                z-index: 10000;
+                max-width: 350px;
+                transform: translateX(400px);
+                transition: transform 0.3s ease;
+                font-weight: 500;
+            `;
+            successDiv.innerHTML = `
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="font-size: 1.5rem;">✅</span>
+                    <div>
+                        <div style="font-size: 1.1rem; margin-bottom: 0.3rem;">Thank you, ${name}!</div>
+                        <div style="font-size: 0.9rem; opacity: 0.9;">Your message has been sent successfully. We'll respond within 24 hours.</div>
+                    </div>
+                </div>
+            `;
+
+            document.body.appendChild(successDiv);
+
+            // Animate in
+            requestAnimationFrame(() => {
+                successDiv.style.transform = 'translateX(0)';
+            });
+
+            // Remove after 5 seconds
+            setTimeout(() => {
+                successDiv.style.transform = 'translateX(400px)';
+                setTimeout(() => {
+                    if (successDiv.parentNode) {
+                        successDiv.parentNode.removeChild(successDiv);
+                    }
+                }, 300);
+            }, 5000);
+        }
+
+        // Copy to clipboard functionality
+        function copyToClipboard(text, element) {
+            navigator.clipboard.writeText(text).then(() => {
+                // Show copied feedback
+                const originalContent = element.innerHTML;
+                const icon = element.querySelector('.contact-icon');
+                const originalIcon = icon.innerHTML;
+                
+                icon.innerHTML = '📋';
+                element.style.background = '#d4edda';
+                element.style.borderColor = '#28a745';
+                
+                setTimeout(() => {
+                    icon.innerHTML = originalIcon;
+                    element.style.background = '';
+                    element.style.borderColor = '';
+                    element.innerHTML = originalContent;
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert('Copy failed. Please copy manually: ' + text);
+            });
+        }
+
+        // Initialize page manager when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new PageManager();
+            
+            // Initialize slider
+            showSlide(0);
+            
+            // Handle browser back/forward buttons
+            window.addEventListener('popstate', (event) => {
+                if (event.state && event.state.page) {
+                    new PageManager().showPage(event.state.page);
+                }
+            });
+        });
+
+        // Form field focus effects
+        document.addEventListener('DOMContentLoaded', () => {
+            const formFields = document.querySelectorAll('.form-group input, .form-group textarea, .form-group select');
+            formFields.forEach(field => {
+                field.addEventListener('focus', () => {
+                    field.parentElement.style.transform = 'scale(1.02)';
+                });
+                field.addEventListener('blur', () => {
+                    field.parentElement.style.transform = 'scale(1)';
+                });
+            });
+        });
+
+        // Smooth scrolling for anchor links (if any)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animations for better UX
+        function handleScrollAnimations() {
+            const cards = document.querySelectorAll('.info-card, .product-card, .location-card, .team-member, .mission-card, .vision-card');
+            const windowHeight = window.innerHeight;
+            
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                const cardVisible = 150;
+                
+                if (cardTop < windowHeight - cardVisible) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Initialize scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set initial opacity and transform
+            document.querySelectorAll('.info-card, .product-card, .location-card, .team-member, .mission-card, .vision-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            });
+
+            window.addEventListener('scroll', handleScrollAnimations);
+            handleScrollAnimations(); // Initial check
+        });
+
+        // Keyboard navigation support
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                document.getElementById('nav-menu').classList.remove('active');
+                document.getElementById('menu-toggle').classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</body>
+</html>
